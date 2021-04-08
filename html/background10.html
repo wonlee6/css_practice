@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 150px;
+        height: 150px;
+        padding: 30px;
+        border: 10px dashed gray;
+        display: inline-block;
+        background: #c0c8dc url(../images/flower.jpg) no-repeat;
+        background-size: 150px;
+      }
+      .num1 {
+        background-origin: content-box;
+      }
+      .num2 {
+        background-origin: padding-box;
+      }
+      .num3 {
+        background-origin: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>background-origin</h3>
+    <ul>
+      <li>배경이미지의 시작점을 지정하는 속성</li>
+      <li>content-box : 컨텐츠 영역부터 시작</li>
+      <li>padding-box : 박스의 안여백을 포함한 부분부터 시작</li>
+      <li>border-box : 박스의 테두리를 포함한 부분부터 시작</li>
+    </ul>
+    <div class="num1">content-box</div>
+    <div class="num2">padding-box</div>
+    <div class="num3">border-box</div>
+  </body>
+</html>

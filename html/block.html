@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      h1,
+      .p,
+      div {
+        background-color: yellow;
+      }
+      em {
+        background-color: palevioletred;
+      }
+      span {
+        background-color: greenyellow;
+      }
+      strong {
+        background-color: aquamarine;
+      }
+      .block {
+        margin: 10px auto;
+        width: 400px;
+        border: 1px solid red;
+        background-color: yellowgreen;
+      }
+      .inline {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>블록요소와 인라인 요소</h3>
+    <p>
+      html요소는 블록요소 이거나 인라인 요소 중의 하나에 속한다. 일반적인 문서의
+      흐름에서 HTML요소는 블록 요소나 인라인 요소냐에 따라서 다름과 같이 화면에
+      표시된다.
+    </p>
+    <ul>
+      <li>
+        블록 요소 : 화면의 한 줄을 전부 차지한다
+        <ul>
+          <li>
+            h1~h6, p, ul, li, table, blockquote, pre, div, form, header, nav,
+            section, footer, aside ....
+          </li>
+        </ul>
+      </li>
+      <li>
+        인라인 요소 : 한 줄의 차례대로 배치된다. 현재 줄에서 필요한 만큼의
+        너비를 차지한다
+        <ul>
+          <li>a, img, strong, em, br, input, span....</li>
+        </ul>
+      </li>
+    </ul>
+    <h1>h태그는 블록요소입니다</h1>
+    <p class="p">p태그는 블록</p>
+    <div>div 블록</div>
+    <em>em은 인라인</em><span>span은 인라인</span
+    ><strong>strong은 인라인</strong>
+    <hr />
+    <h3>블록요소의 수평정렬</h3>
+    <p>
+      블록요소를 가운데 정렬하려면 왼쪽 마진과 오른쪽 마진을 auto로 설정하면
+      된다
+    </p>
+    이 때 블록요소의 width값을 지정해줘야 한다
+    <h2>블록요소의 수평정렬</h2>
+    <p class="block">
+      블록 요소를 가운데 정렬하려면 왼쪽 마진과 오른쪽마진을 auto 이 때
+      블록요소의 width값을 지정해줘야 한다
+    </p>
+    <hr />
+    <h3>인라인요소의 수평정렬</h3>
+    <p>인라인 요소를 컨테이너의 중앙에 놓으려면 text-align 속성을 사용한다</p>
+    <h2>인라인 요소의 수평정렬</h2>
+    <p>인라인 요소를 컨테이너의 중아에 놓으려면 text-align 속성을 사용한다.</p>
+    <p class="inline"><em>인라인</em></p>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style></style>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1><strong>객체 조작 및 생성</strong></h1>
+    <h2><em>html()</em></h2>
+    <p id="target">이것은<strong>하나의</strong>단락입니다</p>
+    <button id="text">text()</button>
+    <button id="html">html()</button>
+    <script>
+      $(function () {
+        $("h2").html("<a href='#'>html 메서드</a>");
+        // alert($("h1").html());
+        alert($("h1").text());
+        $("#text").click(function () {
+          // alert($("#target").text());
+          $("#target").text("안녕하세요");
+        });
+        $("#html").click(function () {
+          // alert($("#target").html());
+          $("#target").html("<b>안녕하세요</b>");
+        });
+      });
+    </script>
+  </body>
+</html>

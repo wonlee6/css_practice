@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      div {
+        border: 1px solid red;
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        vertical-align: top;
+        background-color: yellowgreen;
+        background-clip: content-box;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>padding</h3>
+    <p>박스의 안쪽 여백을 말합니다.</p>
+    <p>
+      content 영역과 border사이의 안쪽 여백을 지정하는 속성으로 속성값은 1에서
+      4개까지 입력할 수 있으며 입력 값의 개수에 따라 적용되는 방향이 다르다
+    </p>
+    <ul>
+      <li>
+        속성값: length | % 지정 가능
+        <ul>
+          <li>length : px, pt, cm 단위로 지정할 수 있다. 음수값 불가</li>
+          <li>% : 상위 요소의 크기를 참조하여 비율 결정</li>
+        </ul>
+      </li>
+      <li>
+        padding 속성은 padding의 방향에 따라 지정할 수 있다
+        <ul>
+          <li>padding : 10px - 상 하 좌 우 모두 10px안 여백 줌</li>
+          <li>padding : 10px 20px - 상하 10px, 좌우 10px</li>
+          <li>padding : 10px 20px 30px - 상 10, 좌우 20, 하 30</li>
+          <li>padding : 10px 20px 30px 40px - 상 우 하 좌 순으로 여백 줌</li>
+        </ul>
+      </li>
+    </ul>
+    <div>padding 없음</div>
+    <div style="padding: 10px">padding:10px</div>
+    <div style="padding: 10px 20px">padding:10px 20px</div>
+    <div style="padding: 10px 20px 30px">padding:10px 20px 30px</div>
+    <div style="padding: 10px 20px 30px 40px">padding:10px 20px 30px 40px</div>
+  </body>
+</html>

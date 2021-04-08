@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+    .images {
+      padding: 10px;
+      border: 1px solid grey;
+    }
+    .images img {
+      width: 150px;
+      height: 100px;
+    }
+
+    .container .big_images {
+      width: 500px;
+      height: 600px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="images">
+        <a href="#" onclick="imagesChange(1)"
+          ><img src="../../images/car1.jpg" alt=""
+        /></a>
+      </div>
+      <div class="images">
+        <a href="#" onclick="imagesChange(2)"
+          ><img src="../../images/car2.jpg" alt=""
+        /></a>
+      </div>
+      <div class="images">
+        <a href="#" onclick="imagesChange(3)"
+          ><img src="../../images/car3.jpg" alt=""
+        /></a>
+      </div>
+      <div class="big_images">
+        <img src="../../images/car1.jpg" alt="" id="img" />
+      </div>
+    </div>
+  </body>
+  <script>
+    function imagesChange(num) {
+      // var images = ["car1.jpg", "car2.jpg", "car3.jpg"];
+      document.getElementById("img").src = "../../images/car" + num + ".jpg";
+    }
+  </script>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="KO">
+  <head>
+    <title>하위 선택자</title>
+    <meta charset="utf-8" />
+    <style>
+      body span {
+        border-bottom: 1px solid red;
+      }
+
+      body > span {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>하위 선택자</h2>
+    <p>선택자 내부에 존재하는<span> 또 다른 선택자</span>를 말합니다</p>
+    <p>후손관계를 말합니다.</p>
+    <h3><span>자식 선택자와는 다릅</span>니다.</h3>
+    <p>후손이란 손자, 손녀도 포함함을 말합니다.</p>
+    <span>자식관계란 아들, 딸만 포함함을 뜻합니다.</span>
+    <p>
+      body span이라고 하면 body의 자식인 span과 후손인 span을 모두 포함함을
+      말합니다.
+    </p>
+  </body>
+</html>

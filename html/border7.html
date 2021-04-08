@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      .dd {
+        width: 200px;
+
+        padding: 10px;
+        border: 5px solid red;
+        margin: 20px;
+        box-sizing: content-box;
+      }
+      .ddd {
+        width: 200px;
+
+        padding: 10px;
+        border: 5px solid red;
+        margin: 20px;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>박스의 크기 꼐산</h3>
+    <p>
+      css를 통하여 요소의 width와 height 속성을 설정하면 요소 안에서 콘텐츠
+      영역의 크기가 설정된다. 요소의 전체 크기를 계산하려면 여기에 패딩, 경계,
+      마진을 더해야 한다 다음과 같이 요소를 지정하고 요소의 전체 크기를 계산하여
+      보자
+    </p>
+    <p class="dd">
+      width: 200px; padding: 10px; border: 5px solid red; margin: 20px; 전체
+      박스 크기는?
+    </p>
+    <p class="ddd">
+      width: 200px; padding: 10px; border: 5px solid red; margin: 20px; 전체
+      박스 크기는?
+    </p>
+    <p>
+      content-box는 기본 CSS 박스 크기 결정법을 사용합니다. 요소의 너비를 100
+      픽셀로 설정하면 콘텐츠 영역이 100 픽셀 너비를 가지고, 테두리와 안쪽 여백은
+      이에 더해집니다.
+    </p>
+    <p>
+      border-box는 테두리와 안쪽 여백의 크기도 요소의 크기로 고려합니다. 너비를
+      100 픽셀로 설정하고 테두리와 안쪽 여백을 추가하면, 콘텐츠 영역이 줄어들어
+      총 너비 100 픽셀을 유지합니다. 대부분의 경우 이 편이 크기를 조절할 때
+      쉽습니다.
+    </p>
+  </body>
+</html>

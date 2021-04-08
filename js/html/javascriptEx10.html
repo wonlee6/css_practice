@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // var walkAmount = prompt("당신의 하루 걷는 양의 몇 보인가요?", "0");
+      // if (walkAmount >= 10000) {
+      //   document.write("매우 좋은 습관을 지니고 계시는군요");
+      // }
+      // var userName = prompt("방문자의 이름은?", "");
+      // if (userName) {
+      //   document.write(userName + "님 반값브니다");
+      // }
+      // var time = new Date().getHours();
+
+      // if (time < 12) {
+      //   msg = "good morning";
+      // } else if (time < 18) {
+      //   msg = "good afternoon";
+      // } else {
+      //   msg = "good evening";
+      // }
+      // alert(msg);
+      var month = prompt("현재는 몇월 입니까 ?", "");
+      var msg;
+      if (9 <= month && month <= 11) {
+        msg = "독서의 계절 가을이네요";
+      } else if (6 <= month && month <= 8) {
+        msg = "여행 가기 좋은 여름이네요";
+      } else if (3 <= month && month <= 5) {
+        msg = "햇살 가득한 봄이네요";
+      } else {
+        msg = "스키의 계절 겨울이네요";
+      }
+      document.write(msg);
+    </script>
+  </body>
+</html>

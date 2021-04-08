@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>덧셈 계산기</h3>
+    <form action="#" name="myform" method="post">
+      첫번째 정수 : <input type="text" name="" id="x" /><br />
+      두번째 정수 :
+      <input type="text" name="" id="y" /><br />
+      합계 : <input type="text" id="sum" /><br />
+      <input type="button" onclick="calc()" value="계산" />
+    </form>
+    <script>
+      function calc() {
+        var x = document.getElementById("x").value;
+        // console.log(x);
+        var y = document.getElementById("y").value;
+
+        var sum = parseInt(x) + parseInt(y);
+        document.getElementById("sum").value = sum;
+      }
+    </script>
+  </body>
+</html>

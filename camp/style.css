@@ -1,0 +1,174 @@
+* {
+  margin: 0 auto;
+  color: #333;
+  font-family: "나눔 고딕", sanserif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+}
+
+ul {
+  padding: 0;
+}
+
+ul > li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#navbar {
+  /* border: 1px solid red; */
+
+  width: 100%;
+  height: 10%;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 16px;
+  /* flex-direction: row; */
+}
+
+.navbar__menu ul {
+  display: flex;
+}
+
+.navbar__menu ul li {
+  margin: 0 15px;
+  padding: 15px;
+}
+.navbar__menu ul li:hover {
+  color: white;
+  background-color: cornflowerblue;
+}
+
+/* home */
+#home {
+  background: url(./images/camping5.png) center/cover no-repeat;
+  /* padding: 40px; */
+  padding-top: 120px;
+  /* text-align: center; */
+  /* border: 1px solid green; */
+  height: 500px;
+}
+/* info */
+/* #campingInfo {
+} */
+#campingInfo > h1,
+#campingInfo > p {
+  margin: 25px 0;
+  text-align: center;
+}
+.info__container {
+  display: flex;
+  justify-content: center;
+}
+.info {
+  width: 250px;
+  border: 3px ridge red;
+  margin: 20px;
+}
+.info h3 {
+  background-color: tomato;
+  color: white;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.info p {
+  padding: 10px;
+  text-align: justify;
+}
+
+.info strong {
+  color: red;
+  text-decoration: underline;
+}
+
+.info .det {
+  text-align: center;
+  font-weight: 700;
+}
+
+.info .line {
+  border-bottom: 1px dashed;
+}
+
+/* roomInfo */
+.room__container {
+  max-width: 1400px;
+  margin: 40px;
+  /* border: 1px solid red; */
+}
+
+.roomInfo {
+  display: flex;
+  margin: 32px 0;
+  /* border: 1px solid blue; */
+  padding: 30px;
+}
+
+.roomInfo img {
+  width: 600px;
+  height: 400px;
+  cursor: pointer;
+  transition: all 1s ease-out;
+}
+.roomInfo img:hover {
+  transform: scale(1.1, 1.1);
+}
+.roomInfo__text {
+  /* border: 1px solid brown; */
+  margin: 0 40px;
+  background-color: white;
+  text-align: left;
+  padding: 30px;
+  width: 500px;
+  height: 400px;
+}
+.roomInfo__text p {
+  margin-top: 20px;
+}
+
+.roomInfo:nth-child(odd) {
+  background-color: antiquewhite;
+}
+
+.roomInfo:nth-child(even) {
+  background-color: whitesmoke;
+}
+
+/* footer */
+
+footer .contact {
+  width: 100%;
+  height: 100px;
+  /* border: 1px solid red; */
+  background-color: rgb(75, 75, 75);
+  display: flex;
+}
+
+footer .contact__address p {
+  color: white;
+  /* border: 1px solid red; */
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.contact .contact__sns i {
+  font-size: 40px;
+  color: white;
+  margin: 20px 10px;
+  transition: 0.5s;
+}
+
+.contact .contact__sns i:hover {
+  color: lightcoral;
+  transform: scale(1.1, 1.1);
+}

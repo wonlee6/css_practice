@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      ul li {
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+        border: 2px solid red;
+        font-size: 12px;
+        display: inline-block;
+        vertical-align: top;
+      }
+      ul li:nth-child(1) {
+        border-radius: 20px;
+      }
+      ul li:nth-child(2) {
+        border-radius: 10px 20px 30px 40px;
+      }
+      ul li:nth-child(3) {
+        border-radius: 62px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>border-radius</h3>
+    <p>박스의 테두리 선을 둥근 모서리 형태로 지정하는 속성</p>
+    <ul>
+      <li>
+        border-radius : 둥근 코너의 반지름을 나타냅니다. 패딩을 적절히 줍니다.
+      </li>
+      <li>
+        각 방향별로 값을 지정할 수 있으며 top-left, top-right, bottom-right,
+        bottom-left 순
+      </li>
+      <li>
+        width 값과 height 값의 1/2 지정하면 동그란 원을 표현할 수 있습니다.
+      </li>
+    </ul>
+  </body>
+</html>

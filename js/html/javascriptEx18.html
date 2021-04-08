@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var i;
+      var fruits = new Array();
+      fruits[0] = "apple";
+      fruits[1] = "banana";
+      fruits[2] = "mango";
+
+      for (var i = 0; i < fruits.length; i++) {
+        document.write(fruits[i] + "<br>");
+      }
+
+      var fruitss = [...fruits];
+      fruitss["a"] = "사과";
+      fruitss["b"] = "포도";
+      fruitss["c"] = "오렌지";
+      for (var i = 0; i < fruits.length; i++) {
+        document.write(fruitss[i] + "<br>");
+      }
+      document.write(fruitss["a"] + "<br>");
+      document.write(fruitss["b"] + "<br>");
+      document.write(fruitss["c"] + "<br>");
+    </script>
+  </body>
+</html>

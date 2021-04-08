@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script>
+      // var bg = new Array();
+      // bg[0] = "blue";
+      // bg[1] = "red";
+      // bg[2] = "green";
+      // bg[3] = "yellow";
+      // var count = 0;
+      // function color() {
+      //   var back = document.getElementById("change");
+      //   back.style.backgroundColor = bg[count];
+      //   count++;
+      //   if (count == 4) {
+      //     count = 0;
+      //   }
+      // }
+
+      var color = ["red", "yellow", "green", "aqua", "purple"];
+      var i = 0;
+      function backColor() {
+        i++;
+        if (i >= color.length) {
+          i = 0;
+        }
+        var bodyTag = document.getElementById("change");
+        bodyTag.style.backgroundColor = color[i];
+      }
+    </script>
+  </head>
+  <body id="change">
+    <button onclick="backColor()">배경색 바꾸기</button>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <button id="slideDown">slideDown()</button>
+  <button id="slideUp">slideUp()</button>
+  <button id="slideToggle">slideToggle()</button>
+  <img
+    id="dog"
+    src="../../images/lunch4.jpg"
+    alt=""
+    width="120"
+    height="100"
+    style="display: none; position: relative"
+  />
+  <body>
+    <script>
+      $("#slideDown").click(function () {
+        $("#dog").slideDown("slow");
+      });
+      $("#slideUp").click(function () {
+        $("#dog").slideUp("slow");
+      });
+      $("#slideToggle").click(function () {
+        $("#dog").slideToggle("slow");
+      });
+    </script>
+  </body>
+</html>

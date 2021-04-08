@@ -1,0 +1,12 @@
+h1 {
+  font-family: "Freehand591 BT", serif;
+}
+h1 + p {
+  font-family: "Noto Sans KR", sans-serif;
+}
+.type2 {
+  font-family: "Nanum Gothic Coding", monospace;
+}
+p > span {
+  font-family: "BernhardFashion BT", serif;
+}

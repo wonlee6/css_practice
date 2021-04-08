@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      div {
+        border: 1px solid black;
+        width: 400px;
+        padding: 10px;
+      }
+      h3 {
+        text-align: center;
+      }
+      span {
+        margin: 0 70px;
+      }
+      ol li input {
+        margin: 0 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h3>용돈 기입장</h3>
+      <span>내용</span>
+      <span>지출</span>
+      <ol>
+        <li>
+          <input type="text" id="num1" /><input
+            type="text"
+            id="num11"
+            value="0"
+          />
+        </li>
+        <li>
+          <input type="text" id="num2" /><input
+            type="text"
+            id="num12"
+            value="0"
+          />
+        </li>
+        <li>
+          <input type="text" id="num3" /><input
+            type="text"
+            id="num13"
+            value="0"
+          />
+        </li>
+        <li>
+          <input type="text" id="num4" /><input
+            type="text"
+            id="num14"
+            value="0"
+          />
+        </li>
+      </ol>
+      <input type="button" value="계산" onclick="clac()" />
+      <input type="reset" value="지우기" />
+    </div>
+    <script>
+      function clac() {
+        var num11, num12, num13, num14;
+        var total = 10000;
+        num11 = parseInt(document.getElementById("num11").value);
+        num12 = parseInt(document.getElementById("num12").value);
+        num13 = parseInt(document.getElementById("num13").value);
+        num14 = parseInt(document.getElementById("num14").value);
+
+        var sum =
+          parseInt(num11) + parseInt(num12) + parseInt(num13) + parseInt(num14);
+        console.log(sum);
+        alert(
+          sum >= total
+            ? sum - total + "원 초과"
+            : `돈 관리 잘 했어요!${total - sum}원 남았습니다`
+        );
+      }
+    </script>
+  </body>
+</html>

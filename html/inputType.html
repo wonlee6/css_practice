@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#" method="get">
+      <fieldset>
+        <legend>input type</legend>
+        <label for="search">검색 : </label>
+        <input type="search" id="search" autofocus />
+        <label for="email">이메일 : </label>
+        <input type="email" id="email" placeholder="your email" />
+        <label for="url">url : </label>
+        <input type="url" id="url" />
+        <label for="tel">tel : </label>
+        <input
+          type="tel"
+          id="tel"
+          pattern="[0-9]{3} - [0-9]{4} - [0 -9]{4}"
+          title="###-####-####"
+          required
+        />
+        <label for="number">number : </label>
+        <input
+          type="number"
+          id="number"
+          min="220"
+          max="300"
+          step="5"
+          readonly
+        />
+        <label for="range">range : </label>
+        <input type="range" id="range" min="1" max="10" value="8" />
+        <label for="date">date : </label>
+        <input type="date" id="date" />
+        <label for="datetime-local">datetime-local : </label>
+        <input type="datetime-local" id="datetime-local" />
+        <label for="time">time : </label>
+        <input type="time" id="time" />
+        <label for="color">color : </label>
+        <input type="color" id="color" />
+      </fieldset>
+      <input type="submit" value="전송" />
+    </form>
+  </body>
+</html>

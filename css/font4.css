@@ -1,0 +1,31 @@
+.parents {
+  color: blue;
+  font-size: 20px;
+}
+
+.child {
+  color: red;
+  font-size: 1.5em;
+}
+
+.font > span:nth-child(1) {
+  font-size: xx-small;
+}
+.font > span:nth-child(2) {
+  font-size: x-small;
+}
+.font > span:nth-child(3) {
+  font-size: small;
+}
+.font > span:nth-child(4) {
+  font-size: medium;
+}
+.font > span:nth-child(5) {
+  font-size: large;
+}
+.font > span:nth-child(6) {
+  font-size: x-large;
+}
+.font > span:nth-child(7) {
+  font-size: xx-large;
+}

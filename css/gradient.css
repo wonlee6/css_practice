@@ -1,0 +1,16 @@
+div {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: top;
+  border: 1px solid green;
+  border-radius: 50%;
+}
+
+.gradient1 {
+  background-image: radial-gradient(circle, #fae3e3, #e50404);
+}
+.gradient2 {
+  background-image: radial-gradient(circle at 12px 80px, #fae3e3, #e50404);
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>미션</title>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        background-color: pink;
+      }
+      .container {
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        height: 600px;
+        line-height: 600px;
+      }
+      button {
+        width: 90px;
+        height: 200px;
+        margin: 30px;
+        background-color: white;
+        border-style: none;
+        /* outline-style: none; */
+      }
+      button:hover {
+        cursor: pointer;
+      }
+      img {
+        width: 500px;
+        height: 600px;
+      }
+      img:hover {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <div class="container">
+    <div>
+      <button onclick="prerolling()">left</button>
+    </div>
+    <div>
+      <img src="../../images/lunch1.jpg" alt="#" id="photo" />
+    </div>
+    <div>
+      <button onclick="nextrolling()">right</button>
+    </div>
+  </div>
+  <body>
+    <script>
+      const img = [
+        "lunch1.jpg",
+        "lunch2.png",
+        "lunch3.png",
+        "lunch4.jpg",
+        "lunch5.png",
+        "lunch6.jpg",
+        "lunch7.jpg",
+      ];
+
+      var count = 0;
+      function nextrolling() {
+        count++;
+        if (count + 1 > img.length) {
+          count = 0;
+        }
+        document.getElementById("photo").src = "../../images/" + img[count];
+      }
+
+      function prerolling() {
+        if (count == 0) {
+          count = img.length;
+        }
+        count--;
+        document.getElementById("photo").src = "../../images/" + img[count];
+      }
+    </script>
+  </body>
+</html>

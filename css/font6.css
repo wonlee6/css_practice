@@ -1,0 +1,12 @@
+.num1 {
+  font-style: italic;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.num2 {
+  font: italic 30px "Times New Roman", serif;
+}
+.num3 > span {
+  font: small-caps bold 40px "Times New Roman", serif;
+}

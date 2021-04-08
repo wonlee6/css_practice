@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#" name="myform" method="post">
+      물품가격 : <input type="text" name="" id="x" /><br />
+      수량 :
+      <input type="text" name="" id="y" /><br />
+
+      <input type="button" onclick="calc()" value="계산" />
+    </form>
+    <script>
+      function calc() {
+        var x = document.getElementById("x").value;
+        // console.log(x);
+        var y = document.getElementById("y").value;
+
+        var sum = parseInt(x) * parseInt(y);
+        alert(sum + "원 입니다.");
+      }
+    </script>
+  </body>
+</html>

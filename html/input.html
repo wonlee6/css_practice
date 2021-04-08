@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#" method="GET">
+      <p>물품 가격 : <input id="number1" type="text" name="user" /></p>
+      <p>수량 : <input id="number2" type="text" name="number" /></p>
+      <p><input type="button" value="계산" onclick="sum()" /></p>
+    </form>
+    <script>
+      function sum() {
+        var com1 = document.getElementById("number1").value;
+        var com2 = document.getElementById("number2").value;
+        var sum = parseInt(com1) + parseInt(com2);
+        alert(sum);
+      }
+    </script>
+  </body>
+</html>

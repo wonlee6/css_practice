@@ -1,0 +1,20 @@
+.name li {
+  color: red;
+  background-color: yellow;
+}
+.hexadecimal li {
+  color: #ff0000;
+  background-color: #ffff00;
+}
+.decimalnumber li:nth-child(1) {
+  background-color: rgba(255, 255, 0);
+  color: rgb(255, 0, 0);
+}
+.decimalnumber li:nth-child(2) {
+  background-color: rgba(255, 255, 0, 0.5);
+  color: rgb(255, 0, 0);
+}
+.percent li {
+  color: rgb(100%, 0%, 0%);
+  background-color: rgb(100%, 100%, 0%);
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .fqa_cover {
+        width: 800px;
+      }
+      h3 {
+        background-color: #010101;
+        color: #fff;
+        line-height: 2em;
+        text-indent: 10px;
+        cursor: pointer;
+      }
+    </style>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h2>FQA</h2>
+    <div class="fqa_cover">
+      <h3>💌 고객센터 운영시간이 어떻게 되나요 ? <span>🔻</span></h3>
+      <ul class="answer">
+        <li>원더골프의 고객센터의 운영시간은 아래와 같습니다</li>
+        <li>전화상담: 1644-4370 / 문자상담 : 1666-6757</li>
+        <li>평 일: 10시 ~ 4시</li>
+        <li>점심시간 : 12시 ~ 1시</li>
+        <li>주말 및 공휴일은 휴무이오니 문의게시판을 이용해주세요</li>
+      </ul>
+      <h3>💫 배송언제되나요?<span>🔻</span></h3>
+      <ul class="answer">
+        <li>
+          주문 후 일반상품의 경우 보통 2~3일, 주문폭주상품의 경우 3-4일정도
+          소요될 수 있습니다.
+        </li>
+        <li>
+          주문폭주 상품과 함께 구매해주실경우 상품 입고 후 발송되어 시간이
+          소요될수 있으니 이점양해부탁드립니다
+        </li>
+      </ul>
+      <h3>💫 교환&반품 하려고 하는데 어떻게 하나요?<span>🔻</span></h3>
+      <ul class="answer">
+        <li>
+          CJ대한통운(1588-1255) ARS연결 후 1번 ➡ 받으신 운송장번호를
+          입력해주세요
+        </li>
+        <li>반품주소지 : 성남시 수정구 모란 아트페리스 4층 (주)원더골프</li>
+        <li>
+          상품수령 후 가능한 빠른 시일 내에(최대 7일 이내) 교환 및 반품 의사를
+          고객센터로 알려주세요
+        </li>
+      </ul>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $(".answer").hide();
+        $(".fqa_cover h3").click(function () {
+          if ($(this).next().css("display") == "none") {
+            $(this).next().slideDown();
+            $("span", this).text("🔼");
+          } else {
+            $(this).next().slideUp();
+            $("span", this).text("🔻");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

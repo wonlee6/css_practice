@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>이미지를 클릭 해 보세요</h3>
+    <img
+      id="image"
+      src="../../images/flower.jpg"
+      alt="꽃"
+      onclick="changeImage()"
+      width="120px"
+      height="100px"
+    />
+    <script>
+      function changeImage() {
+        document.getElementById("image").src = "../../images/coffee.jpg";
+      }
+    </script>
+  </body>
+</html>

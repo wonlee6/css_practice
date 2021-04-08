@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        .block, .inline {
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+        }
+        .auto {
+            width: auto;
+            height: auto;
+            border: 1px solid green;
+        }
+        .length {
+            width: 200px;
+            min-height: 100px;
+            border: 1px solid blue;
+            margin-top: 10px;
+        }
+        .min {
+            margin-top: 10px;
+            min-width: 200px;
+            max-width: 50%;
+            border: 1px solid red;
+        }
+    </style>
+  </head>
+  <body>
+    <h3>width와 height</h3>
+    <p>요소의 너비와 높이를 지정하는 속성</p>
+    <p>여백을 포함하지 않은 크기로 px, %, em등의 단위로 된 수치 사용 가능</p>
+    <p class="block">블록요소에만 지정할 수 있음</p>
+    <span class="inline">인라인 요소에는 적용 불가</ㄴp>
+    <ul>
+      <li class="auto">
+        auto : width 속성은 화면 전체를 차지하며, height속성은 콘텐츠 높이에
+        따라 자동 조절
+      </li>
+      <li class="length">
+        length: 길이 단위 값으로 적용되는 방식은 box-sizing 속성 값에 따라 다름
+        ehight속성의 경우 콘텐츠 높이가 지정된 값보다 크더라도 요소의 높이는
+        변경되자 않음 음수를 지정할 수 없음
+      </li>
+      <li>
+        percentage : 자신을 포함한 요소의 값을 참조하여 비율로 결정 heigth
+        속성의 경우 length처럼 콘텐츠 높이로 계산된 값이 지정된 값보다 크더라도
+        요소의 높이는 변경되지 않으며 음수 지정 불가
+      </li>
+    </ul>
+    <div class="min">
+        min-width : 200px; max-width: 50%
+        min-width : 200px; max-width: 50%
+        min-width : 200px; max-width: 50%
+        window기준 50%를 넘지 않고 줄바꿈이 일어남
+    </div>
+  </body>
+</html>

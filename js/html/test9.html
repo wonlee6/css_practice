@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>미션</title>
+    <meta charset="utf-8" />
+  </head>
+  <div class="container"></div>
+  <body>
+    <script>
+      const clock = document.querySelector(".container");
+
+      function getTime() {
+        var now = new Date();
+        var newYear = new Date(2021, 11, 31);
+        // var diff = newYear - now;
+        // var milliseconds = Math.floor(diff % 1000);
+        // diff = diff / 1000;
+        // var seconds = Math.floor(diff % 60);
+        // diff = diff / 60;
+        // var minutes = Math.floor(diff % 60);
+        // diff = diff / 60;
+        // var hours = Math.floor(diff % 24);
+        // diff = diff / 24;
+        // var days = Math.floor(diff);
+        var diff = newYear - now;
+        var result = Math.ceil(diff / (1000 * 60 * 60 * 24));
+        clock.innerHTML =
+          "현재 일로부터 올해 말까지 " + result + "일 남았습니다";
+      }
+      getTime();
+    </script>
+  </body>
+</html>

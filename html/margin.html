@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      div {
+        border: 1px solid yellowgreen;
+        background-color: antiquewhite;
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background-clip: content-box;
+        vertical-align: top;
+      }
+      .block {
+        border: 1px solid red;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        background-color: blue;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>margin</h3>
+    <p>박스의 바깥쪽 여백</p>
+    <p>
+      content 영역과 border 사이의 바깥쪽 여백을 지정하는 속성으로/ 속성값은
+      1에서 4개까지 엽략 할 수 있으며, 입력 값의 개수에 따라 적용되는 방향이
+      다름
+    </p>
+    <ul>
+      <li>
+        속성값: length | % 지정 가능
+        <ul>
+          <li>length : px, pt, cm 단위로 지정할 수 있다. 음수값 사용 가능</li>
+          <li>% : 상위 요소의 크기를 참조하여 비율 결정</li>
+        </ul>
+      </li>
+      <li>
+        margin 속성은 margin의 방향에 따라 지정할 수 있다
+        <ul>
+          <li>padding : 10px - 상 하 좌 우 모두 10px안 바깥 여백 줌</li>
+          <li>padding : 10px 20px - 상하 10px, 좌우 10px</li>
+          <li>padding : 10px 20px 30px - 상 10, 좌우 20, 하 30</li>
+          <li>
+            padding : 10px 20px 30px 40px - 상 우 하 좌 순으로 바깥 여백 줌
+          </li>
+        </ul>
+      </li>
+      <li>
+        상하로 인접한 박스의 display:block인 경우 마진 겹침 현상이 일어날 수
+        있음
+      </li>
+    </ul>
+    <div>margin 없음</div>
+    <div style="margin: 10px">margin:10px</div>
+    <div style="margin: 10px 20px">margin:10px 20px</div>
+    <div style="margin: 10px 20px 30px">margin:10px 20px 30px</div>
+    <div style="margin: 10px 20px 30px 40px">margin:10px 20px 30px 40px</div>
+    <hr />
+    <p>마진 겹침 현상</p>
+    <div class="block"></div>
+    <div class="block"></div>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>숫자 맞추기 게임</h2>
+    이 게임은 컴퓨터가 생성한 숫자를 맞추는 게임입니다 숫자는 1부터 100 사이에
+    있습니다
+    <form action="#">
+      숫자 : <input type="text" id="number" size="5" />
+      <input type="button" onclick="guess()" value="확인" />
+      추측 횟수 :
+      <input type="text" id="input_guesses" size="5" value="0" /> 힌트 :
+      <input type="text" id="input_result" size="16" />
+    </form>
+    <script>
+      function guess() {
+        var guessNum = 44;
+        var result = "";
+
+        var num = parseInt(document.getElementById("number").value);
+        var count = parseInt(document.getElementById("input_guesses").value);
+
+        count++;
+        document.getElementById("input_guesses").value = count;
+
+        if (num > guessNum) {
+          result = "낮습니다";
+        } else if (num == guessNum) {
+          result = "정답";
+        } else {
+          result = "높습니다";
+        }
+        document.getElementById("input_result").value = result;
+        return true;
+      }
+    </script>
+  </body>
+</html>

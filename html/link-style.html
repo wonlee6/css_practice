@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      .d a:link {
+        color: red;
+      }
+      .d a:visited {
+        color: green;
+      }
+      .d a:hover {
+        color: blue;
+      }
+      .d a:active {
+        color: yellow;
+      }
+      .dd a:hover {
+        font-size: 1.5em;
+      }
+      .ddd a:hover {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>링크 스타일</h2>
+    <ul>
+      <li>a:link - 방문되지 않은 링크 스타일</li>
+      <li>a:visited - 방문된 링크 스타일</li>
+      <li>a:hover - 마우스가 위에 있을 때 스타일</li>
+      <li>a:active - 마우스로 클릭되는 때 스타일</li>
+    </ul>
+    <p class="d"><a href="#">네이버</a></p>
+    <p class="dd"><a href="">폰트 크기를 변경하는 링크</a></p>
+    <p class="ddd"><a href="">배경색을 변경하는 링크</a></p>
+  </body>
+</html>

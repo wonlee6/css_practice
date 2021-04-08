@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      span {
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+        background: no-repeat url(../images/flower.jpg);
+        background-size: 120px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>background-position</h3>
+    <ul>
+      <li>배경이미지의 위치를 설정할 수 잇습니다.</li>
+      <li>픽셀, %, 키워드, em을 사용할 수 있습니다.</li>
+      <li>left top, left center, left bottom</li>
+      <li>right top, right center, right bottom</li>
+      <li>center top, center centerm center bottom</li>
+    </ul>
+    <span style="background-position: left center">left center</span>
+    <span style="background-position: right bottom">right bottom</span>
+    <span style="background-position: 50% 50%">50% 50%</span>
+    <span style="background-position: 0% 100%">0% 100%</span>
+  </body>
+</html>

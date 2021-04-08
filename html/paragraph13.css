@@ -1,0 +1,19 @@
+h1,
+h2 {
+  color: green;
+  font-family: "펜흘림", "궁서";
+  font-size: 25px;
+}
+p > strong,
+em {
+  color: yellowgreen;
+  font-family: "휴먼굵은팸체", Arial;
+  font-size: 15px;
+  font-style: italic;
+}
+ul li ul li {
+  color: red;
+  font-family: "Segoe Print";
+  font-size: 18px;
+  font-weight: bold;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font: 12px "굴림";
+        margin: 10px;
+      }
+      li {
+        list-style: none;
+      }
+      #gnb {
+        width: 525px;
+        padding-left: 5px;
+        padding-bottom: 5px;
+        background: #ddf;
+      }
+      #gnb:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      #gnb li {
+        float: left;
+      }
+      #gnb li a {
+        display: block;
+        width: 100px;
+        height: 40px;
+        text-align: center;
+        border-top: 7px solid #77f;
+        margin-right: 5px;
+        background: #ccf;
+        color: #666;
+        text-decoration: none;
+      }
+      #gnb li a:hover {
+        background-color: #eef;
+        color: #000;
+      }
+      #gnb li a span {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="gnb">
+      <li>
+        <a href="#">회사소개<span>COMPANY</span></a>
+      </li>
+      <li>
+        <a href="#">제품안내<span>PRODUCK</span></a>
+      </li>
+      <li>
+        <a href="#">고객지원<span>CUSTOMER</span></a>
+      </li>
+      <li>
+        <a href="#">채용정보<span>RECRUIT</span></a>
+      </li>
+      <li>
+        <a href="#">커뮤니티<span>COMMUNITY</span></a>
+      </li>
+    </ul>
+  </body>
+</html>

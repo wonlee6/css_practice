@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="width: 800px; text-align: center">
+      <h2>가위바위보 게임</h2>
+      <p><button onclick="start()">게임시작</button></p>
+      <p>컴퓨터</p>
+      <p id="coming"></p>
+    </div>
+    <div style="float: left; width: 400px">
+      <p>user</p>
+      <p id="userimg"></p>
+    </div>
+    <h2 id="result"></h2>
+    <script>
+      function start() {
+        var user = prompt("가위, 바위, 보 중 선택하세요", "바위");
+        var userNum;
+        switch (user) {
+          case "바위":
+            userNum = 1;
+            break;
+          case "보":
+            userNum = 2;
+            break;
+          case "가위":
+            userNum = 3;
+            break;
+          default:
+            alert("잘못 입력하셨습니다");
+            location.reload();
+        }
+        var comNum = Math.floor(Math.random() * 3) + 1;
+        document.getElementById("coming").innerHTML =
+          "<img src='../../images/math_img_" +
+          comNum +
+          ".jpg' alt='가위,바위,보'>";
+        document.getElementById("userimg").innerHTML =
+          "<img src='../../images/pmath_img_" +
+          userNum +
+          ".jpg' alt='가위,바위,보'>";
+
+        var result = document.getElementById("result");
+
+        if (userNum == comNum) {
+          result.innerHTML = "무승부.";
+        } else if (
+          (userNum == 1 && comNum == 3) ||
+          (userNum == 2 && comNum == 1) ||
+          (userNum == 3 && comNum == 2)
+        ) {
+          result.innerHTML = "이겼습니다.";
+        } else {
+          result.innerHTML = "졌습니다.";
+        }
+        // if (userNum == 1 && comNum == 3) {
+        //   result.innerHTML = "이겼습니다.";
+        // } else if (userNum == 1 && comNum == 2) {
+        //   result.innerHTML = "졌습니다.";
+        // } else if (userNum == 1 && comNum == 1) {
+        //   result.innerHTML = "무승부.";
+        // }
+        // if (userNum == 2 && comNum == 3) {
+        //   result.innerHTML = "졌습니다.";
+        // } else if (userNum == 2 && comNum == 2) {
+        //   result.innerHTML = "무승부.";
+        // } else if (userNum == 2 && comNum == 1) {
+        //   result.innerHTML = "이겼습니다.";
+        // }
+        // if (userNum == 3 && comNum == 3) {
+        //   result.innerHTML = "무승부.";
+        // } else if (userNum == 3 && comNum == 2) {
+        //   result.innerHTML = "이겼습니다.";
+        // } else if (userNum == 3 && comNum == 1) {
+        //   result.innerHTML = "졌습니다.";
+        // }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,271 @@
+/* 기본사항 */
+
+* {
+  margin: 0 auto;
+  color: #333;
+  font-family: "나눔 고딕", sanserif;
+}
+
+body {
+  background-color: #fff;
+}
+
+ul {
+  padding: 0;
+}
+
+ul > li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hidden {
+  position: absolute;
+  left: -9999px;
+  font-size: 0;
+}
+
+/* header*/
+header {
+  width: 1400px;
+  height: 100px;
+  /* border: 1px solid red; */
+}
+
+header:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+header > h1 {
+  width: 200px;
+  float: left;
+  padding-top: 26px;
+}
+
+header > ul {
+  width: 500px;
+  float: left;
+  padding-top: 40px;
+}
+header > ul > li {
+  float: left;
+  margin-right: 20px;
+}
+
+header > ul > li > a:hover {
+  color: #ec545d;
+}
+
+header > ul > li:last-child:after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 22px;
+  /* border: 1px solid blue; */
+  position: absolute;
+  background: url(../images/digital.png) no-repeat 0 0;
+}
+
+header > section {
+  width: 140px;
+  float: right;
+  /* border: 1px solid green; */
+  padding-top: 22px;
+}
+
+header > section > ul > li {
+  float: left;
+}
+header > section > ul > li > a {
+  display: inline-block;
+  width: 38px;
+  height: 47px;
+}
+
+header > section > ul > li:nth-child(1) {
+  background: url(../images/icon1.png) no-repeat center center;
+  background-size: 70%;
+}
+header > section > ul > li:nth-child(2) {
+  background: url(../images/icon2.png) no-repeat center center;
+  background-size: 70%;
+  margin: 0 10px;
+}
+header > section > ul > li:nth-child(3) {
+  background: url(../images/icon3.png) no-repeat center center;
+  background-size: 70%;
+}
+
+/* slide */
+.slide_cover {
+  width: 100%;
+  height: 500px;
+  background-color: #000;
+}
+.slide {
+  width: 1400px;
+  height: 500px;
+  background: #000 url(../images/slidebanner.png) no-repeat center center;
+  padding: 120px;
+  box-sizing: border-box;
+  /* border: 1px solid orange; */
+}
+
+.slide > h2 {
+  color: #fff;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.slide > p:nth-child(2) {
+  color: wheat;
+  font-size: 1em;
+  margin-bottom: 30px;
+}
+
+.slide > p:nth-child(3) > a {
+  padding: 10px 20px;
+  background-color: #fff;
+  display: inline-block;
+  margin-right: 20px;
+  border-radius: 18px;
+  font-size: 0.9em;
+  margin-bottom: 30px;
+}
+
+.slide > p:nth-child(3) > a:hover {
+  background-color: #ec545d;
+  color: #fff;
+}
+.slide > p:nth-child(4) {
+  color: #fff;
+  font-size: 0.5em;
+  letter-spacing: -1px;
+}
+
+/* banner */
+.banner_cover {
+  width: 100%;
+  height: 800px;
+  background-color: #000;
+}
+.banner {
+  width: 1400px;
+  height: 800px;
+}
+
+.banner > h2 {
+  height: 100px;
+  text-align: center;
+}
+.banner > ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.banner > ul > li {
+  width: 335px;
+  height: 650px;
+  margin-right: 20px;
+  float: left;
+  box-sizing: border-box;
+  border: 1px solid white;
+}
+
+.banner > ul > li:last-child {
+  margin-right: 0;
+}
+
+.banner > ul > li > p:nth-child(1) {
+  width: 235px;
+  height: 308px;
+  /* border: 1px solid red; */
+  cursor: pointer;
+}
+
+.banner > ul > li:nth-child(1) > p:nth-child(1) {
+  background: url(../images/banner1.png) no-repeat center center;
+}
+.banner > ul > li:nth-child(2) > p:nth-child(1) {
+  background: url(../images/banner2.png) no-repeat center center;
+}
+.banner > ul > li:nth-child(3) > p:nth-child(1) {
+  background: url(../images/banner3.png) no-repeat center center;
+}
+.banner > ul > li:nth-child(4) > p:nth-child(1) {
+  background: url(../images/banner4.png) no-repeat center center;
+}
+.banner > ul > li:nth-child(1) > p:nth-child(1):hover {
+  background: url(../images/banner1_1.png) no-repeat center center;
+}
+.banner > ul > li:nth-child(2) > p:nth-child(1):hover {
+  background: url(../images/banner2-1.png) no-repeat center center;
+}
+.banner > ul > li:nth-child(3) > p:nth-child(1):hover {
+  background: url(../images/banner3-1.png) no-repeat center center;
+}
+.banner > ul > li:nth-child(4) > p:nth-child(1):hover {
+  background: url(../images/banner4-1.png) no-repeat center center;
+}
+
+.banner > ul > li > h3 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 1.3em;
+}
+.banner > ul > li > p:nth-child(3) {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.banner > ul > li > p:nth-child(4) > a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #fff;
+  border-radius: 15px;
+}
+.banner > ul > li > p:nth-child(4) > a:hover {
+  background-color: #ec545d;
+}
+/* footer */
+footer {
+  width: 1400px;
+  padding: 20px 0;
+}
+footer:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+footer > section {
+  float: left;
+  width: 1020px;
+}
+footer > section > p {
+  line-height: 1.6em;
+}
+footer > ul {
+  float: right;
+}
+
+footer > ul > li {
+  float: left;
+  padding-right: 10px;
+}
+
+footer > ul > li:nth-child(2) {
+  padding-left: 50px;
+  font-size: 0.6em;
+  line-height: 40px;
+}

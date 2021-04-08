@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>버튼을 클릭하면 이미지가 교체</h2>
+    <img id="carimg" src="../../images/car1.jpg" alt="car1" />
+    <hr />
+    <button onclick="imgchange()">이미지 교체하기</button>
+    <script>
+      const imgs = ["car1.jpg", "car2.jpg", "car3.jpg", "car4.jpg"];
+      function imgchange() {
+        var randomNum = Math.floor(Math.random() * 4);
+        // console.log(randomNum);
+        document.getElementById("carimg").src =
+          "../../images/" + imgs[randomNum];
+      }
+    </script>
+  </body>
+</html>

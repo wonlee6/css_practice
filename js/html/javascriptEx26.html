@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    아이디 : <input type="text" name="" id="id" size="10" />
+    <button onclick="checkID()">check</button>
+    <script>
+      function checkID() {
+        var idd = document.getElementById("id").value;
+        document.write(idd);
+        if (idd.length < 6) alert("ㅇㅏ이디");
+      }
+
+      var s = "aBcDeF";
+      var result1 = s.toLowerCase();
+      var result2 = s.toUpperCase();
+      document.write(result1, "<br>");
+      document.write(result2, "<br>");
+
+      var s1 = "누구에게나 친구는";
+      var s2 = "어느 누구에게도 친구가 아니다";
+
+      var s3 = s1.concat(s2);
+      document.write(s3, "<br>");
+
+      var s = "자바스크립트에 오신 것을 환영합니다";
+      var t = "호랑나비 흰나비";
+      var n = s.indexOf("환영");
+      document.write(n + "<br>");
+      var m = s.indexOf("우");
+      document.write(m + "<br>");
+
+      var u = t.lastIndexOf("나");
+      document.write(u + "<br>");
+
+      str = "Like father, like son";
+      result = str.match("like");
+      document.write(result + "<br>");
+
+      result = str.match(/like/gi);
+      document.write(result + "<br>");
+
+      var as = "두드림 직업전문학교 학생";
+      document.write(as + "<br>");
+      result3 = as.replace("두드림 직업전문학교", "이젠IT아카데미");
+      document.write(result3 + "<br>");
+
+      var spl = "one, two, three, four, five";
+      array = spl.split(",");
+      for (i = 0; i < array.length; i++) {
+        document.write(i + "-" + array[i] + "<br>");
+      }
+    </script>
+  </body>
+</html>

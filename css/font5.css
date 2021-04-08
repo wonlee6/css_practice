@@ -1,0 +1,16 @@
+.weight > span {
+  border-bottom: 2px dotted red;
+  font-weight: bold;
+}
+.style > span {
+  border-bottom: 2px dotted red;
+  font-style: italic;
+}
+.variant > li:nth-child(1) > span {
+  border-bottom: 2px dotted red;
+  font-variant: small-caps;
+}
+
+.line-height {
+  line-height: 3em;
+}

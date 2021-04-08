@@ -1,0 +1,35 @@
+header {
+  width: 100%;
+  background-color: yellow;
+  height: 100px;
+}
+
+#content {
+  width: 100%;
+  background-color: silver;
+}
+
+nav {
+  width: 30%;
+  height: 400px;
+  background-color: sienna;
+  float: left;
+}
+
+section {
+  width: 70%;
+  height: 400px;
+  background-color: lightblue;
+  float: left;
+}
+
+footer {
+  background-color: lightsalmon;
+  height: 200px;
+}
+
+#content:after {
+  content: "";
+  display: block;
+  clear: both;
+}

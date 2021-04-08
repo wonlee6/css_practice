@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      li {
+        width: 150px;
+        border: 1px solid red;
+        margin-bottom: 10px;
+      }
+      li:nth-child(1) {
+        white-space: normal;
+      }
+      li:nth-child(2) {
+        white-space: pre;
+      }
+      li:nth-child(3) {
+        white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>white-space</h3>
+    <p>택스트의 공백과 줄바꿈의 처리방법을 지정하는 속성</p>
+    <ul>
+      <li>normal: 요소의 너비에 따라 자동 줄바꿈</li>
+      <li>
+        pre : 텍스트의 공백과 줄바꿈은 그대로 표시되고, 요소의 너비에 따른
+        줄바꿈은 적용되지 않음
+      </li>
+      <li>
+        nowrap: 텍스트의 공백은 병합되고 줄바꿈은 무시되며, 요소의 너비에 따른
+        줄바꿈도 적용되지 않습니다.
+      </li>
+    </ul>
+  </body>
+</html>

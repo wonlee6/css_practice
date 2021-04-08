@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      #one,
+      #two,
+      #three {
+        width: 200px;
+        height: 50px;
+      }
+      #one {
+        background-color: aqua;
+      }
+      #container {
+        position: relative;
+        background-color: purple;
+        width: 500px;
+        height: 50px;
+      }
+      #two {
+        background-color: yellow;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+      }
+      #three {
+        background-color: green;
+      }
+      p {
+        background-color: lightgreen;
+        width: 200px;
+        height: 50px;
+      }
+      #aa {
+        background-color: yellow;
+        position: fixed;
+        top: 0;
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="one">블록 1</p>
+    <div id="container">
+      container
+      <div id="two">
+        블록 2<br />
+        postision:absolute;
+      </div>
+    </div>
+    <p id="three">블록 3</p>
+    <hr />
+    <p>블록 #1</p>
+    <p id="aa">블록 #2<br />position:fixed</p>
+    <p>블록 #3</p>
+    <p>블록 #4</p>
+    <p>블록 #5</p>
+    <p>블록 #6</p>
+    <p>블록 #7</p>
+    <p>블록 #8</p>
+    <p>블록 #9</p>
+    <p>블록 #10</p>
+    <p>블록 #11</p>
+  </body>
+</html>

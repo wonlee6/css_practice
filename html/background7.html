@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+        display: inline-block;
+        background: no-repeat url(../images/travel.jpg);
+      }
+      .num2 {
+        background-size: 50% 50%;
+      }
+      .num3 {
+        background-size: cover;
+      }
+      .num4 {
+        background-size: contain;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>background-size</h3>
+    <ul>
+      <li>배경 이미지의 크기를 지정하는 속성</li>
+      <li>px단위로 지정할 수 있음</li>
+      <li>%지정 : 부모값이 기준이 됩니다.</li>
+      <li>
+        cover : 배경 이미지의 원래 비율을 무시하고 요소 박스 영역 전체에
+        배경이미지가 가득차도록 함
+      </li>
+      <li>
+        contain : 배경이미지의 월래 비율을 유지한 채 박스 영역 전체에 배경
+        이미지가 가득 참
+      </li>
+    </ul>
+    <div class="num1"></div>
+    <div class="num2"></div>
+    <div class="num3"></div>
+    <div class="num4"></div>
+  </body>
+</html>

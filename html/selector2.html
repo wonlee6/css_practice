@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+     * {
+         color: black;
+     }
+     p > strong {
+         color: red;
+     }
+     h1 + p {
+         color: red;
+     }
+    </style>
+  </head>
+  <body>
+    <h1>행복</h1>
+    <p>저녁때 <br>
+    돌아갈 집이 있다는 것 <br>
+    <br>
+    힘들대 <br>
+    마음속으로 생각할 사람 있다는것 <br>
+    <br>
+    외로울 대 <br>
+    혼자서 부를 노래 있다는 것
+    <hr>
+    전체 선택자는 *기호로 표시 되며 페이지 안 모든 요소를 선택할 때 사용</p>
+    <hr>
+    
+    <h1>자식 선택자</h1>
+    <ul>
+        <li>현재 요소의 바로 아레에 나오는 선택자</li>
+        <li>ul > li 라고 표현하면 ul에 포함된 li요소를 말한다</li>
+    </ul>
+    <p>ul과 p는 <strong>형제관계</strong>입니다.</p>
+    <hr>
+    <h1>인접 <em>선택자</em></h1>
+    <p>현재 요소 밖의 바로 뒤에 나오는 요소를 가리키는 선택자 입니다.</p>
+    <p>인접선택자는 +를 붙입니다.</p>
+  </body>
+</html>

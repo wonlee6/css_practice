@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>미션</title>
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <div id="inner"></div>
+    <script>
+      var clock = document.getElementById("inner");
+
+      function times() {
+        var date = new Date();
+        var hours = date.getHours();
+        var minutes = date.getMinutes();
+        var secounds = date.getSeconds();
+        if (secounds % 2 == 0) {
+          document.bgColor = "yellow";
+        } else {
+          document.bgColor = "lightgreen";
+        }
+        var str =
+          "현재시간 : " + hours + "시" + minutes + "분" + secounds + "초";
+        clock.innerHTML = str;
+        setTimeout("times()", 1000);
+      }
+
+      times();
+    </script>
+  </body>
+</html>

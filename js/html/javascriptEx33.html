@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#" name="myform">
+      <input type="text" id="target" name="text1" />
+      <input type="submit" value="제출" onclick="process()" />
+    </form>
+    <script>
+      function process() {
+        var id = document.getElementById("target").value;
+        alert(id);
+      }
+    </script>
+  </body>
+</html>

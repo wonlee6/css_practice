@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>미션</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <script>
+      var cm = parseInt(prompt("당신의 신장은?", "cm, 숫자만 입력"));
+      var kg = parseInt(prompt("당신의 몸무게는?", "kg, 숫자만 입력"));
+
+      var av = (cm - 100) * 0.9;
+      var result =
+        kg >= av
+          ? "적정몸무게는" + av + "\n당신은 적정 몸무게보다 이상"
+          : "적정몸무게는" + av + "<br>당신은 적정 몸무게보다 미달";
+
+      alert(result);
+    </script>
+  </body>
+</html>
